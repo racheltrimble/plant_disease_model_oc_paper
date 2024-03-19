@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plant_disease_model"
+
+version = "0.0.1"
+authors = [
+  { name="Rachel Trimble", email="rjt42@cam.ac.uk" },
+]
+description = "A framework for running plant disease management optimisation experiments."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/racheltrimble/networkSpread"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
